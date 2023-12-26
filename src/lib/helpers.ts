@@ -13,7 +13,7 @@ export function stripTrailingSlash(url: string): string {
   return url.replace(/\/$/, '')
 }
 
-export const isBrowser = () => typeof window !== 'undefined'
+export const isBrowser = () => typeof document !== 'undefined'
 
 export function applySettingDefaults<
   Database = any,
